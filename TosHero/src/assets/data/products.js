@@ -1,40 +1,41 @@
-import productImg01 from "../images/double-sofa-01.png";
-import productImg02 from "../images/double-sofa-02.png";
-import productImg03 from "../images/double-sofa-03.png";
+import productImg01 from "../../assets/images/vatten-pistol-01.png";
+import productImg02 from "../../assets/images/vatten-pistol-02.png";
+import productImg03 from "../../assets/images/vatten-pistol-03.png";
+import productImg4 from "../../assets/images/vatten-pistol-4.png";
 
-import productImg04 from "../images/single-sofa-01.jpg";
-import productImg05 from "../images/single-sofa-02.jpg";
-import productImg06 from "../images/single-sofa-03.jpg";
-import productImg007 from "../images/single-sofa-04.png";
+import productImg04 from "../../assets/images/lek-pool-01.png";
+import productImg05 from "../../assets/images/lek-pool-02.png";
+import productImg06 from "../../assets/images/lek-pool-03.png";
+import productImg007 from "../../assets/images/lek-pool-04.png";
 
-import productImg07 from "../images/arm-chair-01.jpg";
-import productImg08 from "../images/arm-chair-02.jpg";
-import productImg09 from "../images/arm-chair-03.jpg";
-import productImg10 from "../images/arm-chair-01.jpg";
+import productImg07 from "../images/new-araivel-01.png";
+import productImg08 from "../images/new-araivel-02.png";
+import productImg09 from "../images/new-araivel-03.png";
+import productImg10 from "../images/new-araivel-04.png";
 
-import productImg13 from "../images/phone-01.jpg";
-import productImg14 from "../images/phone-02.jpg";
-import productImg15 from "../images/phone-03.png";
-import productImg16 from "../images/phone-04.jpg";
-import productImg17 from "../images/phone-05.jpg";
-import productImg18 from "../images/phone-06.jpg";
+import productImg13 from "../images/new-araivel-05.png";
+import productImg14 from "../images/new-araivel-06.png";
 
-import productImg19 from "../images/watch-01.jpg";
-import productImg20 from "../images/watch-02.jpg";
-import productImg21 from "../images/watch-03.jpg";
-import productImg22 from "../images/watch-04.jpg";
+import productImg16 from "../../assets/images/vatten-pistol-01.png";
+import productImg17 from "../../assets/images/vatten-pistol-01.png";
+import productImg18 from "../../assets/images/vatten-pistol-01.png";
 
-import productImg23 from "../images/wireless-01.png";
+import productImg19 from "../../assets/images/popular-01.png";
+import productImg20 from "../../assets/images/popular-02.png";
+import productImg21 from "../../assets/images/popular-03.png";
+import productImg22 from "../../assets/images/popular-04.png";
 
-import productImg25 from "../images/wireless-03.png";
+import productImg23 from "../../assets/images/cyckel-05.png";
+
+import productImg25 from "../../assets/images/vatten-pistol-01.png";
 
 const products = [
   {
     id: "01",
-    productName: "Stone and Beam Westview ",
+    productName: "Atosa Vatten Pistol 59 Cm ",
     imgUrl: productImg01,
-    category: "sofa",
-    price: 193,
+    category: "Vatten-Pistol",
+    price: 189.75,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -50,10 +51,10 @@ const products = [
 
   {
     id: "02",
-    productName: "Rivet Bigelow Modern ",
-    imgUrl: productImg02,
-    category: "sofa",
-    price: 253,
+    productName: "Color baby Vattenpistol Mickey And The Roadster Racers",
+    imgUrl: productImg4,
+    category: "Vatten-Pistol",
+    price: 79.99,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -73,10 +74,10 @@ const products = [
 
   {
     id: "03",
-    productName: "Amazon Brand Modern Sofa",
+    productName: "Atosa Vattenpistol",
     imgUrl: productImg03,
-    category: "sofa",
-    price: 173,
+    category: "Vatten-Pistol",
+    price: 174.99,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -95,10 +96,10 @@ const products = [
   },
   {
     id: "26",
-    productName: "Rivet Bigelow Modern ",
+    productName: "Atosa Vatten Pistol 34 Cm ",
     imgUrl: productImg02,
-    category: "sofa",
-    price: 253,
+    category: "Vatten-Pistol",
+    price: 79.89,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -119,7 +120,7 @@ const products = [
     id: "04",
     productName: "Fllufy Sheep Sofa",
     imgUrl: productImg04,
-    category: "sofa",
+    category: "Lekpool",
     price: 163,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -142,7 +143,7 @@ const products = [
     id: "05",
     productName: "Faux Velvet Sofa",
     imgUrl: productImg05,
-    category: "sofa",
+    category: "Lekpool",
     price: 163,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -165,7 +166,7 @@ const products = [
     id: "06",
     productName: "Fllufy Sheep Sofa",
     imgUrl: productImg06,
-    category: "sofa",
+    category: "Lekpool",
     price: 163,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -185,10 +186,10 @@ const products = [
   },
   {
     id: "07",
-    productName: "Sakarias Armchair",
+    productName: "Smoby Med Kök Maxi Neo Friends House",
     imgUrl: productImg07,
-    category: "chair",
-    price: 99,
+    category: "New-Arraivel",
+    price: 5135.45,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -210,7 +211,7 @@ const products = [
     id: "27",
     productName: "Modern Arm Sofa",
     imgUrl: productImg007,
-    category: "sofa",
+    category: "Lekpool",
     price: 173,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -231,10 +232,10 @@ const products = [
 
   {
     id: "08",
-    productName: "Baltsar Chair",
+    productName: "Hasbro Ultra Select",
     imgUrl: productImg08,
-    category: "chair",
-    price: 89,
+    category: "New-Arraivel",
+    price: 499.86,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -254,10 +255,10 @@ const products = [
 
   {
     id: "09",
-    productName: "Helmar Chair",
+    productName: "Feber Mesa Fantasmer Picnic",
     imgUrl: productImg09,
-    category: "chair",
-    price: 112,
+    category: "New-Arraivel",
+    price: 1142,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -277,9 +278,9 @@ const products = [
 
   {
     id: "10",
-    productName: "Apple iPhone 12 Pro",
+    productName: "Mga Sportområde 3 1 Little Tikes 1 Little Tikes",
     imgUrl: productImg13,
-    category: "mobile",
+    category: "New-Arraivel",
     price: 799,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
@@ -299,10 +300,10 @@ const products = [
   },
   {
     id: "25",
-    productName: "Sakarias Armchair",
+    productName: "Feber Hus Eco",
     imgUrl: productImg10,
-    category: "chair",
-    price: 99,
+    category: "New-Arraivel",
+    price: 1599.99,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -321,10 +322,10 @@ const products = [
   },
   {
     id: "11",
-    productName: "Apple iPhone 12 Max",
+    productName: "Devessport Trampolin",
     imgUrl: productImg14,
-    category: "mobile",
-    price: 799,
+    category: "New-Arraivel",
+    price: 1494.85,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -341,30 +342,6 @@ const products = [
     ],
     avgRating: 4.8,
   },
-
-  {
-    id: "12",
-    productName: "Realme 8",
-    imgUrl: productImg15,
-    category: "mobile",
-    price: 599,
-    shortDesc:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nostrum accusantium iste, voluptas cumque provident! Consequatur officiis animi rem tempore voluptate cumque hic similique aperiam ut consectetur distinctio repudiandae quia quam quos, quas illo, iusto, necessitatibus odio veniam exercitationem quis voluptatibus debitis laboriosam! Esse debitis obcaecati blanditiis at impedit quibusdam!",
-    reviews: [
-      {
-        rating: 4.8,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-      {
-        rating: 4.9,
-        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      },
-    ],
-    avgRating: 4.8,
-  },
-
   {
     id: "13",
     productName: "One Plus Nord",
@@ -436,10 +413,10 @@ const products = [
 
   {
     id: "16",
-    productName: "Rolex Watch",
+    productName: "Bestway Glida H2OGo! Triple 549 cm",
     imgUrl: productImg19,
-    category: "watch",
-    price: 299,
+    category: "Popular",
+    price: 190.49,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -459,10 +436,10 @@ const products = [
 
   {
     id: "17",
-    productName: "Timex Easy Reader Watch",
+    productName: "Bestway Fyrkantig Uppblåsbar Lekpool",
     imgUrl: productImg20,
-    category: "watch",
-    price: 299,
+    category: "Popular",
+    price: 209.99,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -482,10 +459,10 @@ const products = [
 
   {
     id: "18",
-    productName: "Rolex Watch",
+    productName: "Throw Ring Game in Wood",
     imgUrl: productImg21,
-    category: "watch",
-    price: 299,
+    category: "Popular",
+    price: 149.99,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -505,10 +482,10 @@ const products = [
 
   {
     id: "19",
-    productName: "Apple Watch",
+    productName: "Cornhole ",
     imgUrl: productImg22,
-    category: "watch",
-    price: 399,
+    category: "Popular",
+    price: 309.99,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:

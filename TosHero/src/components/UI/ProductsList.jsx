@@ -2,12 +2,12 @@ import ProductCard from "./ProductCard"
 
 
 
-const ProductsList = (data) => {
+const ProductsList = ({data}) => {
   return(
     <>
     {
-        data.map(item=>(
-
+        data?.map(item=>(
+            
             <ProductCard item={item}/>
         ))}
   
