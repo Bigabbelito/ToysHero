@@ -66,3 +66,9 @@ section{
   font-weight: 600;
   
 }
+
+@media screen and (max-width: 768px){
+  .section__title{
+    padding: 0px 0px ;
+  }
+}
