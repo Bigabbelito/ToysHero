@@ -4,6 +4,7 @@ import { useRef, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import {NavLink} from 'react-router-dom'
 import {Container, Row} from 'reactstrap'
+import {useSelector} from 'react-redux'
 import userIcon from '../../assets/images/user__icon.png'
 
 
@@ -27,6 +28,7 @@ const nav__links = [
 const Header = () => {
 
   const headerRef = useRef(null)
+  const totalQuantity = useSelector(state => state.cart.totalQuantity)
 
   const menuRef = useRef(null)
 
@@ -78,7 +80,7 @@ const Header = () => {
           </span>
         <span className='cart__icon'>
         <i className='ri-shopping-bag-line'></i>
-        <span className='badge'>2</span>
+        <span className='badge'>{totalQuantity}</span>
         </span>
 
         <span className='user__icon'>

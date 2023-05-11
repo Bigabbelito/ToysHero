@@ -6,13 +6,13 @@ const ProductsList = ({data}) => {
   return(
     <>
     {
-        data?.map(item=>(
+        data?.map((item, index) =>(
             
-            <ProductCard item={item}/>
+            <ProductCard item={item} key={index}/>
         ))}
   
   </>
-  )
-}
+  ); 
+};
 
 export default ProductsList
