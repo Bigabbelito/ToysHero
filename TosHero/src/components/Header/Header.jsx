@@ -49,7 +49,8 @@ const Header = () => {
 
   const logout = ()=> {
     signOut(auth).then(() =>{
-      toast.success('Logged Out')
+      toast.success('Logged Out');
+      navigate('/home')
     }).catch(err=>{
       toast.error(err.message)
 
@@ -110,7 +111,7 @@ const Header = () => {
         <motion.img whileTap={{scale: 1.2}} src={ currentUser ? currentUser.photoURL: userIcon} alt='' onClick={toggleProfileActions }/> 
         <div className='profile__actions' ref={profileActionRef} onClick={toggleProfileActions }>
           {
-            currentUser ? (<span onClick={logout}>Logout</span>) : (<div>
+            currentUser ? (<span onClick={logout}>Logout</span>) : (<div className='d-flex align-items-center justify-content-center flex-column'>
               <Link to ='/signup'>Signup</Link>
               <Link to ='/login'>Login</Link>
             </div>)
