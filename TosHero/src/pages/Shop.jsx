@@ -6,7 +6,6 @@ import '../styles/shop.css'
 import products from '../assets/data/products'
 import ProductsList from '../components/UI/ProductsList'
 
-
 const Shop = () => {
   const[productsData, setProductsData] = useState(products)
 
@@ -55,7 +54,7 @@ const Shop = () => {
     <Container>
       <Row>
       
-        <Col lg='3' md='3'>
+        <Col lg='3' md='6'>
           <div className='filter__widget'>
             <select onChange={handelFiler}>
             <option>Filter By Category</option>
@@ -66,7 +65,7 @@ const Shop = () => {
             </select>
           </div>
         </Col>
-        <Col lg='3' md='3'>
+        <Col lg='3' md='6' className="text-end">
         <div className='filter__widget'>
             <select>
             <option>Sort By</option>
@@ -75,7 +74,7 @@ const Shop = () => {
             </select>
           </div>
         </Col>
-        <Col lg='6' md='4'>
+        <Col lg='6' md='12'>
           <div className="search__box">
             <input type="text" placeholder="Search..."  onChange={handelSearch}>
                
