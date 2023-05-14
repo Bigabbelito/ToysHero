@@ -111,7 +111,7 @@ const products = [
   },
   {
     id: "04",
-    productName: "Fllufy Sheep Sofa",
+    productName: "Lekpool H2OGo! Huricane Tunnel Blast 420x320x260 cm",
     imgUrl: productImg04,
     category: "Lekpool",
     price: 163,

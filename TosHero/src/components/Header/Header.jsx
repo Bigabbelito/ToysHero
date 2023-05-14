@@ -2,7 +2,7 @@ import './header.css'
 
 import { useRef, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import {NavLink} from 'react-router-dom'
+import {NavLink, useNavigate} from 'react-router-dom'
 import {Container, Row} from 'reactstrap'
 import {useSelector} from 'react-redux'
 import userIcon from '../../assets/images/user__icon.png'
@@ -31,6 +31,7 @@ const Header = () => {
   const totalQuantity = useSelector(state => state.cart.totalQuantity)
 
   const menuRef = useRef(null)
+  const navigate = useNavigate()
 
   const stickyHeaderFunc = ()=>{
     window.addEventListener('scroll', ()=> {
@@ -48,6 +49,10 @@ const Header = () => {
 
   const menuToggle = () => menuRef.current.classList.toggle('active__menu')
 
+  const navigateToCart =()=>{
+    navigate('/cart')
+  }
+
 
   return <header className='header' ref={headerRef}>
   <Container>
@@ -61,7 +66,7 @@ const Header = () => {
       </div>
 
         <div className='navigation'  ref={menuRef} onClick={menuToggle}>
-          <ul className='menu'>
+          <motion.ul className='menu'>
             {
               nav__links.map((item, index) =>(
                 <li className='nav__item' key={index}>
@@ -70,7 +75,7 @@ const Header = () => {
                 </li>
               ))
             }
-          </ul>
+          </motion.ul>
         </div>
 
         <div className='nav__icons'>
@@ -78,7 +83,7 @@ const Header = () => {
           <i className='ri-heart-line'></i>
           <span className='badge'>1</span>
           </span>
-        <span className='cart__icon'>
+        <span className='cart__icon' onClick={navigateToCart}>
         <i className='ri-shopping-bag-line'></i>
         <span className='badge'>{totalQuantity}</span>
         </span>

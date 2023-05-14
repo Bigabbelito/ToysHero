@@ -15,10 +15,10 @@ const dispatch =useDispatch()
 
 const addtoCart =() =>{
   dispatch(cartActions.addItem({
-    id:item.id,
-    productName:item.productName,
-    image:item.imgUrl,
-    price:item.price,
+    id: item.id,
+    productName: item.productName,
+    imgUrl: item.imgUrl,
+    price: item.price,
   }));
 
 
