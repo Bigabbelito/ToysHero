@@ -10,7 +10,7 @@ import {toast} from 'react-toastify'
 
 const Login = () => {
   const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
+  const [password, setPassword] = useState('password')
   const [loading, setLoading] = useState(false)
   const navigate = useNavigate()
 

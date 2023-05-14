@@ -18,9 +18,9 @@ import { db } from '../firebase.config'
 
 
 const SIgnup = () => {
-  const [username, setUsername] = useState('')
+  const [username, setUsername] = useState('admin')
   const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
+  const [password, setPassword] = useState('password')
   const [file, setFile] = useState(null)
   const [loading, setLoading] = useState(false)
 

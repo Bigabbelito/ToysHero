@@ -2,13 +2,14 @@ import './header.css'
 
 import { useRef, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import {Link, NavLink, useNavigate} from 'react-router-dom'
+import {Link , NavLink, useNavigate} from 'react-router-dom'
 import {Container, Row} from 'reactstrap'
 import {useSelector} from 'react-redux'
 import userIcon from '../../assets/images/user__icon.png'
 import useAuth from '../../custom-hooks/useAuth'
-
-
+import { signOut } from 'firebase/auth'
+import {auth} from '../../firebase.config'
+import {toast} from 'react-toastify'
 
 const nav__links = [
   {
@@ -29,11 +30,13 @@ const Header = () => {
 
   const headerRef = useRef(null)
   const totalQuantity = useSelector(state => state.cart.totalQuantity)
-  const profileActionRef =  useRef(null)
+  const profileActionRef = useRef(null)
 
   const menuRef = useRef(null)
   const navigate = useNavigate()
   const { currentUser } = useAuth()
+
+
   const stickyHeaderFunc = ()=>{
     window.addEventListener('scroll', ()=> {
         if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -43,6 +46,18 @@ const Header = () => {
         }
     })
   }
+
+  const logout = ()=> {
+    signOut(auth).then(() =>{
+      toast.success('Logged Out')
+    }).catch(err=>{
+      toast.error(err.message)
+
+    })
+  }
+
+
+
   useEffect(() =>{
     stickyHeaderFunc()
     return () => window.removeEventListener('scroll', stickyHeaderFunc)
@@ -52,7 +67,7 @@ const Header = () => {
 
   const navigateToCart =()=>{
     navigate('/cart')
-  }
+  };
 
   const toggleProfileActions = () => profileActionRef.current.classList.toggle('show__profileActions')
 
@@ -92,17 +107,14 @@ const Header = () => {
         </span>
 
         <div className='profile'>
-        <motion.img whileTap={{scale: 1.2}}
-         src={ currentUser ? currentUser.photoURL: userIcon} alt=''
-         onClick={toggleProfileActions}
-         /> 
-        <div className='profile__actions' ref={profileActionRef} onClick={toggleProfileActions}>
-        {
-          currentUser ? <span>Logout</span> : <div>
-            <Link to='/signup'>Signup</Link>
-            <Link to='/login'>Login</Link>
-          </div>
-        }
+        <motion.img whileTap={{scale: 1.2}} src={ currentUser ? currentUser.photoURL: userIcon} alt='' onClick={toggleProfileActions }/> 
+        <div className='profile__actions' ref={profileActionRef} onClick={toggleProfileActions }>
+          {
+            currentUser ? (<span onClick={logout}>Logout</span>) : (<div>
+              <Link to ='/signup'>Signup</Link>
+              <Link to ='/login'>Login</Link>
+            </div>)
+          }
         </div>
         </div>
         <div className='mobile__menu'>
