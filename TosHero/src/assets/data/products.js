@@ -114,7 +114,7 @@ const products = [
     productName: "Lekpool H2OGo! Huricane Tunnel Blast 420x320x260 cm",
     imgUrl: productImg04,
     category: "Lekpool",
-    price: 163,
+    price: 1630,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -134,10 +134,10 @@ const products = [
 
   {
     id: "05",
-    productName: "Faux Velvet Sofa",
+    productName: "Bestway Oval Uppblåsbar Lekpool Lava Lagoon",
     imgUrl: productImg05,
     category: "Lekpool",
-    price: 163,
+    price: 1499.99,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -157,10 +157,10 @@ const products = [
 
   {
     id: "06",
-    productName: "Fllufy Sheep Sofa",
+    productName: "Bestway Rund Uppblåsbar Lekpool Mickey",
     imgUrl: productImg06,
     category: "Lekpool",
-    price: 163,
+    price: 389.85,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
@@ -202,10 +202,10 @@ const products = [
 
   {
     id: "27",
-    productName: "Modern Arm Sofa",
+    productName: "Bestway Uppblåsbar Lekpool Med Bollar Fisher Price",
     imgUrl: productImg007,
     category: "Lekpool",
-    price: 173,
+    price: 760,
     shortDesc:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur iure quas illo voluptates labore tempore!",
     description:
