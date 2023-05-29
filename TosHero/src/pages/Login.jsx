@@ -9,8 +9,8 @@ import {toast} from 'react-toastify'
 
 
 const Login = () => {
-  const [email, setEmail] = useState('')
-  const [password, setPassword] = useState('')
+  const [user, setUser] = useState('admin')
+  const [password, setPassword] = useState('password')
   const [loading, setLoading] = useState(false)
   const navigate = useNavigate()
 
@@ -21,7 +21,7 @@ const Login = () => {
 
     try {
 
-      const userCredential = await signInWithEmailAndPassword(auth, email, password)
+      const userCredential = await signInWithEmailAndPassword(auth, user, password)
 
       const user = userCredential.user
 
@@ -47,8 +47,8 @@ const Login = () => {
 
           <Form className='auth__form' onSubmit={signIn}>
           <FormGroup className='form__group'>
-            <input type='email' placeholder='Enter you email'
-              value={email} onChange={e=> setEmail(e.target.value)}/>
+            <input type='username' placeholder='Enter you username'
+              value={user} onChange={e=> setUser(e.target.value)}/>
             </FormGroup>
 
             <FormGroup className='form__group'>
