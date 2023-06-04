@@ -8,9 +8,9 @@ import Login from '../pages/Login'
 import SIgnup from '../pages/SIgnup'
 import ProtectedRoute from './ProtectedRoute'
 
-import Addproducts from '../admin/Addproducts'
-import AllProducts from '../admin/AllProducts'
-import Dahboard from '../admin/Dashboard'
+ import AddProduct from '../admin/AddProduct'
+ import AllProducts from '../admin/AllProducts'
+import Dashboard from '../admin/Dashboard'
 
 
 const Routers = () => {
@@ -18,14 +18,14 @@ const Routers = () => {
     <Route path="/" element={<Navigate to='home' />}/>
     <Route path='home' element={<Home/>}/>
     <Route path='shop' element={<Shop/>}/>
-    <Route path='shop/:id' element={<ProductDetails/>}/>
+    <Route path='/:id' element={<ProductDetails/>}/>
     <Route path='cart' element={<Cart/>}/>
     <Route path='/*' element={<ProtectedRoute/>}>
 
     <Route path='checkout' element={<Checkout/>}/>
-    <Route path='dashboard' element={<Dahboard/>}/>
+    <Route path='dashboard' element={<Dashboard/>}/>
     <Route path='dashboard/all-products' element={<AllProducts/>}/>
-    <Route path='dashboard/add-product' element={<Addproducts/>}/>
+    <Route path='dashboard/add-product' element={<AddProduct/>}/>
     </Route>
    
     <Route path='login' element={<Login/>}/>

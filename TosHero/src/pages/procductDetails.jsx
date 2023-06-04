@@ -1,5 +1,3 @@
-
-
 import { useState, useRef, useEffect } from 'react'
 import {Container, Row, Col} from 'reactstrap'
 import {useParams} from 'react-router-dom'
@@ -13,7 +11,7 @@ import { useDispatch } from 'react-redux'
 import { cartActions } from '../redux/slices/cartSlice'
 import { toast } from 'react-toastify'
 
-const procductDetails = () => {
+const ProductDetails = () => {
 
   const [tab, setTab] = useState('desc');
   const reviewUser = useRef('')
@@ -174,7 +172,4 @@ const procductDetails = () => {
   </>
  )
 }
-      export default procductDetails
-
-
-
+      export default ProductDetails

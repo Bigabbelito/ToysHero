@@ -1,6 +1,4 @@
 
-
-
 const Dashboard = () => {
   return (
     <div>
