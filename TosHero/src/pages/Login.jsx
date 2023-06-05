@@ -9,7 +9,7 @@ import {toast} from 'react-toastify'
 
 
 const Login = () => {
-  const [user, setUser] = useState('admin')
+  const [user, setUser] = useState('')
   const [password, setPassword] = useState('password')
   const [loading, setLoading] = useState(false)
   const navigate = useNavigate()
